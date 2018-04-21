@@ -1,0 +1,10 @@
+page-waiting-list {
+    .centered-content {
+        background-color: map-get($colors, primary);
+    }
+
+    ion-grid {
+        height: 100%;
+        justify-content: center;
+    }
+}

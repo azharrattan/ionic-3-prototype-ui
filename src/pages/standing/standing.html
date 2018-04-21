@@ -1,0 +1,142 @@
+<!--
+  Generated template for the StandingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  	<ion-navbar>
+		<ion-buttons start>
+			<button ion-button icon-only>
+				<ion-icon name="menu" color="light"></ion-icon>
+			</button>
+		</ion-buttons>
+		<ion-title text-center>
+				Standing
+		</ion-title>
+		<ion-buttons end>
+			<button ion-button icon-only>
+				<ion-icon name="settings" color="light"></ion-icon>
+			</button>
+		</ion-buttons>
+  	</ion-navbar>
+
+	<ion-toolbar no-border-top color="light">
+		<ion-segment [(ngModel)]="category">
+			<ion-segment-button value="team">
+				Team
+			</ion-segment-button>
+			<ion-segment-button value="scorer">
+				Scorer
+			</ion-segment-button>
+			<ion-segment-button value="assist">
+				Assist
+			</ion-segment-button>
+		</ion-segment>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+	<div [ngSwitch]="category">
+		<ion-list *ngSwitchCase="'team'">
+			<ion-item>
+				<h1 item-start margin-right>1</h1>
+				<ion-thumbnail item-start>
+					<img src="assets/img/speakers/bear.jpg">
+				</ion-thumbnail>
+				<h2><b>Team A</b></h2>
+				<p>4 | 4 | 0 | 0</p>
+				<h3 item-end>12 pts</h3>
+			</ion-item>
+			<ion-item>
+				<h1 item-start margin-right>2</h1>
+				<ion-thumbnail item-start>
+					<img src="assets/img/speakers/iguana.jpg">
+				</ion-thumbnail>
+				<h2><b>Team B</b></h2>
+				<p>4 | 3 | 1 | 0</p>
+				<h3 item-end>10 pts</h3>
+			</ion-item>
+			<ion-item>
+				<h1 item-start margin-right>3</h1>
+				<ion-thumbnail item-start>
+					<img src="assets/img/speakers/eagle.jpg">
+				</ion-thumbnail>
+				<h2><b>Team C</b></h2>
+				<p>4 | 2 | 1 | 1</p>
+				<h3 item-end>7 pts</h3>
+			</ion-item>
+			<ion-item>
+				<h1 item-start margin-right>4</h1>
+				<ion-thumbnail item-start>
+					<img src="assets/img/speakers/elephant.jpg">
+				</ion-thumbnail>
+				<h2><b>Team D</b></h2>
+				<p>4 | 0 | 0 | 4</p>
+				<h3 item-end>0 pts</h3>
+			</ion-item>
+		</ion-list>
+
+		<ion-list *ngSwitchCase="'scorer'">
+			<ion-item>
+				<h1 item-start margin-right>1</h1>
+				<ion-avatar item-start>
+					<img src="assets/img/marty-avatar.png">
+				</ion-avatar>
+				<h2><b>John Doe</b></h2>
+				<p>Team A</p>
+				<h3 item-end>12 Goal</h3>
+			</ion-item>
+			<ion-item>
+				<h1 item-start margin-right>2</h1>
+				<ion-avatar item-start>
+					<img src="assets/img/ian-avatar.png">
+				</ion-avatar>
+				<h2><b>Mark Goesman</b></h2>
+				<p>Team C</p>
+				<h3 item-end>10 Goal</h3>
+			</ion-item>
+			<ion-item>
+				<h1 item-start margin-right>3</h1>
+				<ion-avatar item-start>
+					<img src="assets/img/sarah-avatar.png.jpeg">
+				</ion-avatar>
+				<h2><b>Shinji Okazaki</b></h2>
+				<p>Team B</p>
+				<h3 item-end>8 Goal</h3>
+			</ion-item>
+		</ion-list>
+
+		<ion-list *ngSwitchCase="'assist'">
+			<ion-item>
+				<h1 item-start margin-right>1</h1>
+				<ion-avatar item-start>
+					<img src="assets/img/ian-avatar.png">
+				</ion-avatar>
+				<h2><b>Chen Long</b></h2>
+				<p>Team B</p>
+				<h3 item-end>6 Assist</h3>
+			</ion-item>
+			<ion-item>
+				<h1 item-start margin-right>2</h1>
+				<ion-avatar item-start>
+					<img src="assets/img/marty-avatar.png">
+				</ion-avatar>
+				<h2><b>Budi Rianto</b></h2>
+				<p>Team C</p>
+				<h3 item-end>3 Assist</h3>
+			</ion-item>
+			<ion-item>
+				<h1 item-start margin-right>3</h1>
+				<ion-avatar item-start>
+					<img src="assets/img/sarah-avatar.png.jpeg">
+				</ion-avatar>
+				<h2><b>Fernando Hose</b></h2>
+				<p>Team A</p>
+				<h3 item-end>2 Assist</h3>
+			</ion-item>
+		</ion-list>
+	</div>
+</ion-content>

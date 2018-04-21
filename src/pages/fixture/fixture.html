@@ -1,0 +1,167 @@
+<!--
+  Generated template for the FixturePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  	<ion-navbar>
+		<ion-buttons start>
+			<button ion-button icon-only>
+				<ion-icon name="menu" color="light"></ion-icon>
+			</button>
+		</ion-buttons>
+		<ion-title text-center>
+			Fixture
+		</ion-title>
+		<ion-buttons end>
+			<button ion-button icon-only>
+				<ion-icon name="settings" color="light"></ion-icon>
+			</button>
+		</ion-buttons>
+  	</ion-navbar>
+
+  	<ion-toolbar no-border-top color="light">
+		<ion-segment [(ngModel)]="range">
+		  <ion-segment-button value="upcoming">
+			Upcoming
+		  </ion-segment-button>
+		  <ion-segment-button value="previous">
+			Previous
+		  </ion-segment-button>
+		</ion-segment>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+	<ion-item-group>
+		<!-- PER DATE FIXTURES -->
+		<div margin-bottom padding-bottom>
+			<!-- DATE DIVIDER -->
+			<ion-item-divider text-center>
+				<span ion-text>Tuesday, 23 April 2018</span>
+			</ion-item-divider>
+
+			<!-- MATCH CARD -->
+			<ion-card>
+				<ion-list>
+					<ion-item no-margin color="primary">
+						<ion-note start margin-left color="light">
+							<ion-icon name="time" item-start></ion-icon>
+							7PM - Lorem Soccer Field
+						</ion-note>
+						<ion-note item-end color="light">
+							-
+						</ion-note>
+					</ion-item>
+					<ion-item>
+						<ion-avatar item-start>
+						<img src="assets/img/speakers/bear.jpg">
+						</ion-avatar>
+						<ion-note item-end>-</ion-note>
+						<h2>Team A</h2>
+					</ion-item>
+					<ion-item>
+						<ion-avatar item-start>
+							<img src="assets/img/speakers/elephant.jpg">
+						</ion-avatar>
+						<h2>Team B</h2>
+						<ion-note item-end>-</ion-note>
+					</ion-item>
+				</ion-list>
+			</ion-card>
+			<ion-card>
+				<ion-list>
+					<ion-item no-margin color="primary">
+						<ion-note start margin-left color="light">
+							<ion-icon name="time" item-start></ion-icon>
+							8PM - Lorem Soccer Field
+						</ion-note>
+						<ion-note item-end color="light">
+							-
+						</ion-note>
+					</ion-item>
+					<ion-item>
+						<ion-avatar item-start>
+						<img src="assets/img/speakers/iguana.jpg">
+						</ion-avatar>
+						<ion-note item-end>4</ion-note>
+						<h2>Team C</h2>
+					</ion-item>
+					<ion-item>
+						<ion-avatar item-start>
+							<img src="assets/img/speakers/eagle.jpg">
+						</ion-avatar>
+						<h2>Team D</h2>
+						<ion-note item-end>3</ion-note>
+					</ion-item>
+				</ion-list>
+			</ion-card>
+		</div>
+
+		<div margin-bottom>
+			<!-- DATE DIVIDER -->
+			<ion-item-divider text-center>
+				Tuesday, 30 April 2018
+			</ion-item-divider>
+
+			<!-- MATCH CARD -->
+			<ion-card>
+				<ion-list>
+					<ion-item no-margin color="primary">
+						<ion-note start margin-left color="light">
+							<ion-icon name="time" item-start></ion-icon>
+							7PM - Ipsum Soccer Field
+						</ion-note>
+						<ion-note item-end color="light">
+							-
+						</ion-note>
+					</ion-item>
+					<ion-item>
+						<ion-avatar item-start>
+						<img src="assets/img/speakers/bear.jpg">
+						</ion-avatar>
+						<ion-note item-end>-</ion-note>
+						<h2>Team A</h2>
+					</ion-item>
+					<ion-item>
+						<ion-avatar item-start>
+							<img src="assets/img/speakers/elephant.jpg">
+						</ion-avatar>
+						<h2>Team C</h2>
+						<ion-note item-end>-</ion-note>
+					</ion-item>
+				</ion-list>
+			</ion-card>
+			<ion-card>
+				<ion-list>
+					<ion-item no-margin color="primary">
+						<ion-note start margin-left color="light">
+							<ion-icon name="time" item-start></ion-icon>
+							8PM - Ipsum Soccer Field
+						</ion-note>
+						<ion-note item-end color="light">
+							-
+						</ion-note>
+					</ion-item>
+					<ion-item>
+						<ion-avatar item-start>
+						<img src="assets/img/speakers/iguana.jpg">
+						</ion-avatar>
+						<ion-note item-end>4</ion-note>
+						<h2>Team B</h2>
+					</ion-item>
+					<ion-item>
+						<ion-avatar item-start>
+							<img src="assets/img/speakers/eagle.jpg">
+						</ion-avatar>
+						<h2>Team D</h2>
+						<ion-note item-end>3</ion-note>
+					</ion-item>
+				</ion-list>
+			</ion-card>
+		</div>
+	</ion-item-group>
+</ion-content>
