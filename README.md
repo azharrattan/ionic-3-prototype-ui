@@ -1,5 +1,7 @@
 # Sample UI Prototype using Ionic 3
 
+![ionic-3-ui-prototype](https://github.com/azharrattan/ionic-3-prototype-ui/blob/master/ionic-3-ui-prototype.gif)
+
 This is a sample UI prototype of a mobile app / web using Ionic 3, based on Ionic Super Starter kit
 
 ## Getting Started
